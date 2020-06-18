@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bill Generator</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div class="head"><i>Xpress Fast Food</i></div>
+        <div class="cont">
+            <form onsubmit="return false">
+                <label><u>Food Item:</u> </label>
+                <select id="food_items" required>
+                    <option value="DOSA" id="dosa">DOSA</option>
+                    <option value="PULAO" id="pulao">PULAO</option>
+                    <option value="IDLI" id="idli">IDLI</option>
+                    <option value="FRIED RICE" id="fried rice">FRIED RICE</option>
+                    <option value="PAROTHA" id="parotha">PAROTHA</option>
+                    <option value="PURI" id="puri">PURI</option>
+                </select>
+                <label><u>Quantity:</u> <input type="number" id="qty" required/></label>
+                <button id="btn" onclick="sub()">Generate</button>
+            </form>
+        </div>
+        <div id="data">
+            <h3>BILLS</h3>
+            <div id="head">
+                <h3>Food Item</h3>
+                <h3>Quantity</h3>
+                <h3>Tax (5%)</h3>
+                <h3>Discount</h3>
+                <h3>TOTAL</h3>
+            </div>
+            <div id="update">
+
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
